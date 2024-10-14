@@ -1,15 +1,12 @@
 my_dict = {'name': 'Светлана', 'age': 40}
 print(my_dict)
 print(my_dict['name'])
-try:
-    print(my_dict['login'])
-except:
-    print('Error key dict')
+print(my_dict.get('login'))
 
 my_dict['login'] = 'user 1'
 my_dict['password'] = '12345'
 
-del my_dict['password']
+my_dict.pop('login')
 #print(my_dict['password'])
 print(my_dict)
 
